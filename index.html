@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>amazon.clone — Everyday Essentials, Delivered</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============================================= -->
+  <!-- HEADER / NAVBAR                                -->
+  <!-- ============================================= -->
+  <header class="site-header">
+
+    <!-- Top Navbar -->
+    <div class="navbar-top">
+      <div class="navbar-top__inner">
+
+        <!-- Logo -->
+        <a href="#" class="logo" aria-label="amazon.clone home">
+          <span class="logo__word">amazon<span class="logo__dot">.clone</span></span>
+          <span class="logo__swoosh" aria-hidden="true"></span>
+        </a>
+
+        <!-- Deliver to -->
+        <a href="#" class="navbar-top__deliver">
+          <span class="icon-pin">📍</span>
+          <span class="navbar-top__deliver-text">
+            <small>Deliver to</small>
+            <strong>India</strong>
+          </span>
+        </a>
+
+        <!-- Search -->
+        <form class="navbar-top__search" role="search">
+          <label for="search-category" class="sr-only">Select category</label>
+          <select id="search-category" class="navbar-top__search-select">
+            <option>All</option>
+            <option>Electronics</option>
+            <option>Fashion</option>
+            <option>Home &amp; Kitchen</option>
+            <option>Mobiles</option>
+            <option>Beauty</option>
+            <option>Books</option>
+          </select>
+          <label for="search-input" class="sr-only">Search products</label>
+          <input id="search-input" type="text" class="navbar-top__search-input" placeholder="Search amazon.clone">
+          <button type="submit" class="navbar-top__search-btn" aria-label="Search">🔍</button>
+        </form>
+
+        <!-- Language -->
+        <a href="#" class="navbar-top__lang">
+          <span class="flag">🇮🇳</span> EN <span class="chevron">▾</span>
+        </a>
+
+        <!-- Account -->
+        <a href="#" class="navbar-top__account">
+          <small>Hello, sign in</small>
+          <strong>Account &amp; Lists <span class="chevron">▾</span></strong>
+        </a>
+
+        <!-- Orders -->
+        <a href="#" class="navbar-top__orders">
+          <small>Returns</small>
+          <strong>&amp; Orders</strong>
+        </a>
+
+        <!-- Cart -->
+        <a href="#" class="navbar-top__cart">
+          <span class="cart-icon">
+            🛒
+            <span class="cart-count">3</span>
+          </span>
+          <strong>Cart</strong>
+        </a>
+      </div>
+    </div>
+
+    <!-- Secondary Navbar -->
+    <nav class="navbar-secondary">
+      <div class="navbar-secondary__inner">
+        <a href="#" class="navbar-secondary__all"><span class="icon-hamburger">☰</span> All</a>
+        <a href="#">Today's Deals</a>
+        <a href="#">Customer Service</a>
+        <a href="#">Registry</a>
+        <a href="#">Gift Cards</a>
+        <a href="#">Sell</a>
+        <a href="#">Best Sellers</a>
+        <a href="#">New Releases</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ============================================= -->
+    <!-- HERO SECTION                                   -->
+    <!-- ============================================= -->
+    <section class="hero" style="background-image: linear-gradient(180deg, rgba(15,25,40,0.15), rgba(15,25,40,0.85)), url('images/hero.jpg');">
+      <div class="hero__content">
+        <h1>Upgrade Your Everyday</h1>
+        <p>Discover great deals on electronics, fashion, home essentials and more.</p>
+        <a href="#deals" class="btn btn--primary">Shop Now</a>
+      </div>
+    </section>
+
+    <!-- ============================================= -->
+    <!-- CATEGORY CARDS                                 -->
+    <!-- ============================================= -->
+    <section class="section categories" aria-labelledby="categories-heading">
+      <div class="section__inner">
+        <h2 id="categories-heading" class="section__title">Shop by Category</h2>
+        <div class="category-grid">
+
+          <article class="category-card">
+            <img src="images/electronics.jpg" alt="Electronics category">
+            <h3>Electronics</h3>
+            <a href="#" class="see-more">See more &rsaquo;</a>
+          </article>
+
+          <article class="category-card">
+            <img src="images/fashion.jpg" alt="Fashion category">
+            <h3>Fashion</h3>
+            <a href="#" class="see-more">See more &rsaquo;</a>
+          </article>
+
+          <article class="category-card">
+            <img src="images/home.jpg" alt="Home and Kitchen category">
+            <h3>Home &amp; Kitchen</h3>
+            <a href="#" class="see-more">See more &rsaquo;</a>
+          </article>
+
+          <article class="category-card">
+            <img src="images/mobile.jpg" alt="Mobiles category">
+            <h3>Mobiles</h3>
+            <a href="#" class="see-more">See more &rsaquo;</a>
+          </article>
+
+          <article class="category-card">
+            <img src="images/beauty.jpg" alt="Beauty category">
+            <h3>Beauty</h3>
+            <a href="#" class="see-more">See more &rsaquo;</a>
+          </article>
+
+          <article class="category-card">
+            <img src="images/books.jpg" alt="Books category">
+            <h3>Books</h3>
+            <a href="#" class="see-more">See more &rsaquo;</a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================= -->
+    <!-- TODAY'S DEALS                                  -->
+    <!-- ============================================= -->
+    <section class="section deals" id="deals" aria-labelledby="deals-heading">
+      <div class="section__inner">
+        <div class="section__header">
+          <h2 id="deals-heading" class="section__title">Today's Deals</h2>
+          <a href="#" class="section__link">See all deals &rsaquo;</a>
+        </div>
+
+        <div class="product-grid">
+
+          <article class="product-card">
+            <span class="badge badge--discount">50% off</span>
+            <img src="images/headphones.jpg" alt="Wireless Headphones">
+            <h3 class="product-card__title">Wireless Headphones</h3>
+            <div class="rating" aria-label="4 out of 5 stars">
+              <span class="stars">★★★★☆</span>
+              <span class="rating__count">1,245</span>
+            </div>
+            <div class="price">
+              <span class="price__current">₹1,999</span>
+              <span class="price__old">₹3,999</span>
+            </div>
+            <span class="tag tag--limited">Limited time deal</span>
+            <button class="btn btn--cart">Add to Cart</button>
+          </article>
+
+          <article class="product-card">
+            <span class="badge badge--discount">35% off</span>
+            <img src="images/smartwatch.jpg" alt="Smart Watch">
+            <h3 class="product-card__title">Smart Watch Series 5</h3>
+            <div class="rating" aria-label="4 out of 5 stars">
+              <span class="stars">★★★★☆</span>
+              <span class="rating__count">982</span>
+            </div>
+            <div class="price">
+              <span class="price__current">₹4,499</span>
+              <span class="price__old">₹6,999</span>
+            </div>
+            <span class="tag tag--limited">Limited time deal</span>
+            <button class="btn btn--cart">Add to Cart</button>
+          </article>
+
+          <article class="product-card">
+            <span class="badge badge--discount">28% off</span>
+            <img src="images/camera.jpg" alt="Digital Camera">
+            <h3 class="product-card__title">Digital Camera 24MP</h3>
+            <div class="rating" aria-label="5 out of 5 stars">
+              <span class="stars">★★★★★</span>
+              <span class="rating__count">521</span>
+            </div>
+            <div class="price">
+              <span class="price__current">₹18,999</span>
+              <span class="price__old">₹26,499</span>
+            </div>
+            <span class="tag tag--limited">Limited time deal</span>
+            <button class="btn btn--cart">Add to Cart</button>
+          </article>
+
+          <article class="product-card">
+            <span class="badge badge--discount">40% off</span>
+            <img src="images/backpack.jpg" alt="Travel Backpack">
+            <h3 class="product-card__title">Travel Backpack 40L</h3>
+            <div class="rating" aria-label="4 out of 5 stars">
+              <span class="stars">★★★★☆</span>
+              <span class="rating__count">764</span>
+            </div>
+            <div class="price">
+              <span class="price__current">₹1,299</span>
+              <span class="price__old">₹2,199</span>
+            </div>
+            <span class="tag tag--limited">Limited time deal</span>
+            <button class="btn btn--cart">Add to Cart</button>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================= -->
+    <!-- POPULAR PRODUCTS                               -->
+    <!-- ============================================= -->
+    <section class="section popular" aria-labelledby="popular-heading">
+      <div class="section__inner">
+        <h2 id="popular-heading" class="section__title">Popular Products</h2>
+
+        <div class="product-grid product-grid--dense">
+
+          <article class="product-card">
+            <img src="images/laptop.jpg" alt="Laptop">
+            <h3 class="product-card__title">UltraBook Pro 15" Laptop</h3>
+            <div class="rating"><span class="stars">★★★★★</span><span class="rating__count">3,102</span></div>
+            <div class="price">
+              <span class="price__current">₹52,990</span>
+              <span class="price__old">₹64,990</span>
+              <span class="price__discount">18% off</span>
+            </div>
+            <p class="prime-text">✔ Free delivery by tomorrow</p>
+            <button class="btn btn--cart">Add to Cart</button>
+          </article>
+
+          <article class="product-card">
+            <img src="images/phone.jpg" alt="Smartphone">
+            <h3 class="product-card__title">Galaxy X12 Smartphone</h3>
+            <div class="rating"><span class="stars">★★★★☆</span><span class="rating__count">2,589</span></div>
+            <div class="price">
+              <span class="price__current">₹21,999</span>
+              <span class="price__old">₹27,999</span>
+              <span class="price__discount">21% off</span>
+            </div>
+            <p class="prime-text">✔ Free delivery by tomorrow</p>
+            <button class="btn btn--cart">Add to Cart</button>
+          </article>
+
+          <article class="product-card">
+            <img src="images/headphones.jpg" alt="Headphones">
+            <h3 class="product-card__title">NoiseCancel Pro Headphones</h3>
+            <div class="rating"><span class="stars">★★★★☆</span><span class="rating__count">1,245</span></div>
+            <div class="price">
+              <span class="price__current">₹1,999</span>
+              <span class="price__old">₹3,999</span>
+              <span class="price__discount">50% off</span>
+            </div>
+            <p class="prime-text">✔ Free delivery by tomorrow</p>
+            <button class="btn btn--cart">Add to Cart</button>
+          </article>
+
+          <article class="product-card">
+            <img src="images/smartwatch.jpg" alt="Smart Watch">
+            <h3 class="product-card__title">Smart Watch Series 5</h3>
+            <div class="rating"><span class="stars">★★★★☆</span><span class="rating__count">982</span></div>
+            <div class="price">
+              <span class="price__current">₹4,499</span>
+              <span class="price__old">₹6,999</span>
+              <span class="price__discount">35% off</span>
+            </div>
+            <p class="prime-text">✔ Free delivery in 2 days</p>
+            <button class="btn btn--cart">Add to Cart</button>
+          </article>
+
+          <article class="product-card">
+            <img src="images/shoes.jpg" alt="Sneakers">
+            <h3 class="product-card__title">AirStride Running Sneakers</h3>
+            <div class="rating"><span class="stars">★★★★☆</span><span class="rating__count">1,876</span></div>
+            <div class="price">
+              <span class="price__current">₹2,299</span>
+              <span class="price__old">₹3,499</span>
+              <span class="price__discount">34% off</span>
+            </div>
+            <p class="prime-text">✔ Free delivery by tomorrow</p>
+            <button class="btn btn--cart">Add to Cart</button>
+          </article>
+
+          <article class="product-card">
+            <img src="images/backpack.jpg" alt="Backpack">
+            <h3 class="product-card__title">Travel Backpack 40L</h3>
+            <div class="rating"><span class="stars">★★★★☆</span><span class="rating__count">764</span></div>
+            <div class="price">
+              <span class="price__current">₹1,299</span>
+              <span class="price__old">₹2,199</span>
+              <span class="price__discount">40% off</span>
+            </div>
+            <p class="prime-text">✔ Free delivery in 2 days</p>
+            <button class="btn btn--cart">Add to Cart</button>
+          </article>
+
+          <article class="product-card">
+            <img src="images/camera.jpg" alt="Camera">
+            <h3 class="product-card__title">Digital Camera 24MP</h3>
+            <div class="rating"><span class="stars">★★★★★</span><span class="rating__count">521</span></div>
+            <div class="price">
+              <span class="price__current">₹18,999</span>
+              <span class="price__old">₹26,499</span>
+              <span class="price__discount">28% off</span>
+            </div>
+            <p class="prime-text">✔ Free delivery by tomorrow</p>
+            <button class="btn btn--cart">Add to Cart</button>
+          </article>
+
+          <article class="product-card">
+            <img src="images/keyboard.jpg" alt="Keyboard">
+            <h3 class="product-card__title">Mechanical Keyboard RGB</h3>
+            <div class="rating"><span class="stars">★★★★☆</span><span class="rating__count">1,032</span></div>
+            <div class="price">
+              <span class="price__current">₹2,799</span>
+              <span class="price__old">₹3,999</span>
+              <span class="price__discount">30% off</span>
+            </div>
+            <p class="prime-text">✔ Free delivery in 2 days</p>
+            <button class="btn btn--cart">Add to Cart</button>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================= -->
+    <!-- BEST SELLERS — CSS-ONLY HORIZONTAL CAROUSEL    -->
+    <!-- ============================================= -->
+    <section class="section carousel-section" aria-labelledby="bestsellers-heading">
+      <div class="section__inner">
+        <h2 id="bestsellers-heading" class="section__title">Best Sellers</h2>
+
+        <div class="carousel">
+          <div class="carousel__track">
+
+            <article class="carousel__card">
+              <img src="images/laptop.jpg" alt="Laptop">
+              <h3>UltraBook Pro 15"</h3>
+              <div class="price"><span class="price__current">₹52,990</span></div>
+            </article>
+
+            <article class="carousel__card">
+              <img src="images/phone.jpg" alt="Smartphone">
+              <h3>Galaxy X12</h3>
+              <div class="price"><span class="price__current">₹21,999</span></div>
+            </article>
+
+            <article class="carousel__card">
+              <img src="images/headphones.jpg" alt="Headphones">
+              <h3>NoiseCancel Pro</h3>
+              <div class="price"><span class="price__current">₹1,999</span></div>
+            </article>
+
+            <article class="carousel__card">
+              <img src="images/smartwatch.jpg" alt="Smart Watch">
+              <h3>Smart Watch S5</h3>
+              <div class="price"><span class="price__current">₹4,499</span></div>
+            </article>
+
+            <article class="carousel__card">
+              <img src="images/shoes.jpg" alt="Sneakers">
+              <h3>AirStride Sneakers</h3>
+              <div class="price"><span class="price__current">₹2,299</span></div>
+            </article>
+
+            <article class="carousel__card">
+              <img src="images/backpack.jpg" alt="Backpack">
+              <h3>Travel Backpack 40L</h3>
+              <div class="price"><span class="price__current">₹1,299</span></div>
+            </article>
+
+            <article class="carousel__card">
+              <img src="images/camera.jpg" alt="Camera">
+              <h3>Digital Camera 24MP</h3>
+              <div class="price"><span class="price__current">₹18,999</span></div>
+            </article>
+
+            <article class="carousel__card">
+              <img src="images/keyboard.jpg" alt="Keyboard">
+              <h3>Mechanical Keyboard</h3>
+              <div class="price"><span class="price__current">₹2,799</span></div>
+            </article>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================= -->
+    <!-- PROMOTIONAL BANNERS                            -->
+    <!-- ============================================= -->
+    <section class="section promo">
+      <div class="section__inner promo__grid">
+
+        <article class="promo-card" style="background-image: linear-gradient(180deg, rgba(10,15,20,0.25), rgba(10,15,20,0.8)), url('images/promo1.jpg');">
+          <h3>Upgrade Your Workspace</h3>
+          <p>Desks, chairs, monitors and accessories to help you work smarter.</p>
+          <a href="#" class="btn btn--secondary">Explore Now</a>
+        </article>
+
+        <article class="promo-card" style="background-image: linear-gradient(180deg, rgba(20,10,15,0.25), rgba(20,10,15,0.8)), url('images/promo2.jpg');">
+          <h3>Fashion Picks For You</h3>
+          <p>Curated styles across clothing, footwear and accessories.</p>
+          <a href="#" class="btn btn--secondary">Explore Now</a>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ============================================= -->
+    <!-- SIGN-IN SECTION                                -->
+    <!-- ============================================= -->
+    <section class="signin" style="background-image: linear-gradient(180deg, rgba(15,18,25,0.4), rgba(15,18,25,0.9)), url('images/signin-bg.jpg');">
+      <div class="signin__inner">
+        <h2>See personalized recommendations</h2>
+        <a href="#" class="btn btn--primary btn--wide">Sign in</a>
+        <p class="signin__new">New customer? <a href="#">Start here.</a></p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================= -->
+  <!-- FOOTER                                         -->
+  <!-- ============================================= -->
+  <footer class="site-footer">
+
+    <a href="#top" class="back-to-top">Back to top</a>
+
+    <div class="footer-columns">
+      <div class="footer-columns__inner">
+
+        <div class="footer-col">
+          <h4>Get to Know Us</h4>
+          <ul>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Press Releases</a></li>
+            <li><a href="#">amazon.clone Science</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Make Money with Us</h4>
+          <ul>
+            <li><a href="#">Sell on amazon.clone</a></li>
+            <li><a href="#">Sell under amazon.clone Accelerator</a></li>
+            <li><a href="#">Protect and Build Your Brand</a></li>
+            <li><a href="#">Become an Affiliate</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>amazon.clone Payment Products</h4>
+          <ul>
+            <li><a href="#">Business Card</a></li>
+            <li><a href="#">Shop with Points</a></li>
+            <li><a href="#">Reload Your Balance</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Let Us Help You</h4>
+          <ul>
+            <li><a href="#">Your Account</a></li>
+            <li><a href="#">Your Orders</a></li>
+            <li><a href="#">Shipping Rates</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Help</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="footer-bottom__inner">
+        <a href="#" class="logo logo--footer">
+          <span class="logo__word">amazon<span class="logo__dot">.clone</span></span>
+        </a>
+        <div class="footer-bottom__selectors">
+          <a href="#" class="footer-bottom__select"><span class="flag">🇮🇳</span> English <span class="chevron">▾</span></a>
+          <a href="#" class="footer-bottom__select">₹ INR - Indian Rupee <span class="chevron">▾</span></a>
+          <a href="#" class="footer-bottom__select">India <span class="chevron">▾</span></a>
+        </div>
+        <p class="footer-bottom__copy">This is a non-commercial student portfolio project built for learning purposes only, and is not affiliated with or endorsed by Amazon.com, Inc.</p>
+        <p class="footer-bottom__copy">&copy; 2026 amazon.clone — a B.Tech portfolio project</p>
+      </div>
+    </div>
+
+  </footer>
+
+</body>
+</html>
