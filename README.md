@@ -41,10 +41,6 @@ Amazon Clone/
 2. Open the project in VS Code.
 3. Open `index.html` using Live Server or directly in a browser.
 
-## 📸 Preview
-
-Add your project screenshot here.
-
 ## 👩‍💻 Author
 
 **Charu Vishwakarma**
